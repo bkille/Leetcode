@@ -1,0 +1,379 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+\usepackage{authblk}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{mathtools}
+
+\lstset{language=C++,
+	backgroundcolor = \color{lightgray},
+	tabsize=4,
+	breaklines=true,
+	basicstyle=\ttfamily,
+	keywordstyle=\bfseries,
+	showstringspaces=false,
+	morekeywords={Input, Output, Explanation}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\def\includegraphic{}
+%\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\newcommand{\opt}{\textrm{\sc OPT}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newtheorem{thm}{Theorem}
+\newtheorem{pf}{Proof}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{quest}[thm]{Question}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{prog}[thm]{Program Call}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+
+\crefname{equation}{Eq.}{Eqs.}
+\Crefname{equation}{Equation}{Equations}
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Leetcode Solution Article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{1186. Maximum Subarray Sum with One Deletion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+   corref={aff1},                       % id of corresponding address, if any
+   %noteref={n1},                        % id's of article notes, if any
+   email={brycekille@gmail.com}   % email address
+]{\inits{BK}\fnm{Bryce} \snm{Kille}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{Department of Astronomy, UIUC},    % university, etc                     %
+  %\postcode{}                                % post or zip code
+  %\city{London},                              % city
+  %\cny{UK}                                    % country
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+%\note[id=n1]{Equal contributor} % note, connected to author
+\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+
+\begin{abstract} % abstract
+	\parttitle{Problem Statement}
+	
+	
+Given an array of integers, return the maximum sum for a \textbf{non-empty subarray} (contiguous elements) with at most one element deletion. In other words, you want to choose a subarray and optionally delete one element from it so that there is still at least one element left and the sum of the remaining elements is maximum possible.\\
+
+
+Note that the subarray needs to be \textbf{non-empty subarray} after deleting one element.
+
+\parttitle{Example 1}
+\begin{lstlisting}
+Input: arr = [1,-2,0,3]
+Output: 4
+Explanation: Because we can choose [1, -2, 0, 3] and drop -2, thus the subarray [1, 0, 3] becomes the maximum value.
+\end{lstlisting}
+
+\parttitle{Example 2}
+\begin{lstlisting}
+Input: arr = [1,-2,-2,3]
+Output: 3
+Explanation: We just choose [3] and it's the maximum sum.
+\end{lstlisting}
+
+\parttitle{Example 3}
+\begin{lstlisting}
+Input: arr = [-1,-1,-1,-1]
+Output: -1
+Explanation: The final subarray needs to be non-empty. You can't choose [-1] and delete -1 from it, then get an empty subarray to make the sum equals to 0.
+\end{lstlisting}
+
+
+\parttitle{Solution}
+By slightly modifying the popular \href{https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm}{Kadane's algorithm} for the \href{https://leetcode.com/problems/maximum-subarray/}{Maximum Subarray Problem}, we can obtain a simple $O(n)$ time $O(1)$ space solution to the problem.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{keyword}
+\kwd{Dynamic Programming}
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+
+\section{Background}
+Let us first refresh our memory on the \href{https://leetcode.com/problems/maximum-subarray/}{simpler version} of this problem, where we want to find the maximum subarray sum \textbf{without} deleting any elements. For the remainder of this article, we refer to a subarray with a maximal sum as a maximal subarray.
+
+ If we want to solve the simple maximum subarray sum problem using dynamic programming, we need to split the problem up into more manageable chunks. Let's consider the maximal subarray which ends at index $i$, $0 \leq i < n$ in the array ($n$ is the size of the array). We know that this maximal subarray will have one of the two following characteristics:
+
+\begin{itemize}
+	\item It is a singleton i.e. the maximal subarray ending at index $i$ is simply the the range $[i, i+1)$
+	\item It extends the maximal subarray ending at the position $i-1$. 
+\end{itemize}
+\ \\
+Now it is clear that at every index $i$, to compute the maximal subarray ending at $i$, we simply need to take the maximum of the two cases above: 
+
+\[ maxSubarray(arr, i) = \max{\begin{cases} 
+arr[i]\\
+arr[i] + maxSubarray(arr, i - 1) & i > 0
+\end{cases}}
+\]
+
+And we can obtain the solution in linear time by simply starting with $i=0$ and looping over the entire array, keeping track of the maximum subarray seen as well as the size of the maximum subarray which ends at position $i-1$. 
+
+
+
+
+\section{Solution}
+\subsection{Intuition}
+We now move on to the maximum subarray sum with one deletion. The common theme in DP problems is to break down the problem into managable subproblems, for each of which you have a set of properties. In the Maximum Subarray Sum problem, we broke down the problem into maximum subarrays ending at a specific index and realized that they have exactly one of two properties. If we add the option to delete an element in a subarray, how can we incorporate this into our properties and subproblems?
+
+We first realize that we can keep our subproblems the same: The maximum subarray must end at some index $i$, so keeping track of such values still makes sense. What about the properties? Well, our original two properties still hold, as the solution space still allows for contiguous subarrays. However, now we want to also keep track of ``skipped subarrays" i.e. subarrays with one element deleted from them. It remains to determine the properties of a maximal skipped subarray ending at position $i$. Again, the maximal skipped subarray ending at index $i$ boils down to having one of two properties:\\
+
+\begin{itemize}
+	\item The maximal skipped subarray ending at index $i$ has already skipped some element, and therefore $i$ is included.
+	\item The maximal skipped subarray ending at index $i$ skips element $i$ and therefore it's value is that of the maximum contiguous subarray ending at $i-1$. 
+\end{itemize}
+\ \\
+
+Therefore, we have the following function (which is $-\infty$ for $i=0$, as no skipped subarray can end at index 0):
+
+{\small
+\[ maxSkippedSubarray(arr, i) = \max{\begin{cases} 
+	maxSkippedSubarray(arr, i - 1) + arr[i] & i > 0\\
+	maxSubarray(arr, i - 1) & i > 0 \\
+	-\infty & i = 0
+	\end{cases}}
+\]
+}
+
+Similar to the previous section, we can obtain the solution in $O(n)$ time $O(1)$ space by setting the base case $i=0$ and then looping over the rest of the array, computing $ maxSubarray(arr, i)$ and $ maxSkippedSubarray(arr, i)$ at every index and keeping track of the maximum subarray and maximum skipped subarray seen.
+
+
+\subsection{C++ Implementation}
+\begin{lstlisting}
+
+class Solution {
+	public:
+	int maximumSum(vector<int>& arr) {
+		// Edge case:
+		if (arr.size() == 0) return 0;
+		
+		// Base case:
+		int max_sum = arr[0];
+		int current_sum = arr[0];
+		int skipped_current_sum = 0;
+		
+		for (int i = 1; i < arr.size(); ++i) {
+			// Compute maxSkippedSubarray(arr, i)
+			skipped_current_sum = max(
+				skipped_current_sum + arr[i], 
+				current_sum 
+			);
+			
+			// Compute maxSubarray(arr, i)
+			current_sum = max(arr[i], current_sum + arr[i]);
+			
+			// Keep track of maximum value seen
+			max_sum = max(
+				max_sum, max(
+					current_sum, 
+					skipped_current_sum
+				)
+			);
+		}
+		return max_sum;
+	}
+};
+\end{lstlisting}
+
+\subsection{Complexity Analysis}
+The algorithm above is $O(n)$ time and $O(1)$ space. We do constant work in the base case, as well as at each iteration of the loop while only using a constant number of variables.
+\end{document}

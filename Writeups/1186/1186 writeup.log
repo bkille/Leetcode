@@ -1,0 +1,620 @@
+This is LuaTeX, Version 1.09.0 (MiKTeX 2.9.6930 64-bit)  (format=lualatex 2019.2.5)  9 SEP 2019 13:43
+ restricted system commands enabled.
+**"1186 writeup.tex"
+("./1186 writeup.tex"
+LaTeX2e <2018-12-01>
+Lua module: luaotfload-main 2018-10-28 2.93 luaotfload entry point
+Lua module: luaotfload-init 2018-10-28 2.93 luaotfload submodule / initializatio
+n
+Lua module: lualibs 2018-10-18 2.61 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2018-10-18 2.61 ConTeXt Lua libraries -- extended c
+ollection.
+Lua module: luaotfload-log 2018-10-28 2.93 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2018-10-28 2.93 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2018-10-28 2.93 luaotfload submodule / conf
+ig file reader
+luaotfload | conf : Root cache directory is C:/Users/bryce/AppData/Local/MiKTeX/
+2.9/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2018-10-28.lua” from kpse
+-resolved path “D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/luatex/lu
+aotfload/fontloader-2018-10-28.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.106”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Lua module: luaotfload-loaders 2018-10-28 2.93 luaotfload submodule / callback h
+andling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2018-10-28 2.93 luaotfload submodule / database
+Lua module: luaotfload-colors 2018-10-28 2.93 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 4
+Lua module: luaotfload-resolvers 2018-10-28 2.93 luaotfload submodule / resolver
+s
+luaotfload | conf : Root cache directory is C:/Users/bryce/AppData/Local/MiKTeX/
+2.9/luatex-cache/generic/names.
+Lua module: luaotfload-features 2018-10-28 2.93 luaotfload submodule / features
+Lua module: luaotfload-letterspace 2018-10-28 2.93 luaotfload submodule / color
+Lua module: luaotfload-auxiliary 2018-10-28 2.93 luaotfload submodule / auxiliar
+y functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 1.139 seconds
+(./bmcart.cls
+Document Class: bmcart 2014/01/24BioMed Central class (VS)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/size10.clo"
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/bryce/AppData/Local/M
+iKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\mathindent=\dimen103
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color
+.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 225.
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-def/luate
+x.def"
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lastpage/lastpage.
+sty"
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+\c@thanks=\count88
+\bmcfloat@box=\box27
+\c@author=\count89
+\c@address=\count90
+\sv@mathsurround=\dimen104
+\fm@box=\box28
+\c@addressref=\count91
+\thanks@box=\box29
+\abstract@box=\box30
+\authors@list=\toks15
+\keywords@list=\toks16
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/preprint/authblk.s
+ty"
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip43
+\@affilsep=\skip44
+\c@Maxaffil=\count92
+\c@authors=\count93
+\c@affil=\count94
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.
+sty"
+\lst@mode=\count95
+\lst@gtempboxa=\box31
+\lst@token=\toks19
+\lst@length=\count96
+\lst@currlwidth=\dimen105
+\lst@column=\count97
+\lst@pos=\count98
+\lst@lostspace=\dimen106
+\lst@width=\dimen107
+\lst@newlines=\count99
+\lst@lineno=\count100
+\lst@maxwidth=\dimen108
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.s
+ty"
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count101
+\lst@skipnumbers=\count102
+\lst@framebox=\box32
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.
+cfg"
+File: listings.cfg 2019/02/27 1.8b listings configuration
+))
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphicx.
+sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics.
+sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 99.
+)
+\Gin@req@height=\dimen109
+\Gin@req@width=\dimen110
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/float/float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks20
+\float@box=\box33
+\@float@everytoks=\toks21
+\@floatcapt=\box34
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsmath.st
+y"
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amstext.st
+y"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen111
+))
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen112
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count104
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count105
+\leftroot@=\count106
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count107
+\DOTSCASE@=\count108
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box35
+\strutbox@=\box36
+\big@size=\dimen113
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count109
+\c@MaxMatrixCols=\count110
+\dotsspace@=\muskip10
+\c@parentequation=\count111
+\dspbrk@lvl=\count112
+\tag@help=\toks23
+\row@=\count113
+\column@=\count114
+\maxfields@=\count115
+\andhelp@=\toks24
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks25
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/indentfirst.
+sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/amsfonts.
+sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hyperref.
+sty"
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-
+hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-
+generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: luatex-loader 2016/05/16 v0.6 Lua module loader (HO)
+
+(D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/scripts/oberdiek/oberdiek.luat
+ex.lua)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
+
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks27
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.
+sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/auxhook.s
+ty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen120
+\Hy@linkcounter=\count116
+\Hy@pagecounter=\count117
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/pd1enc.de
+f"
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count118
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/hyperref.
+cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4393.
+
+
+Package hyperref Warning: Option `pagecolor' is not available anymore.
+
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count119
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen121
+\Fld@menulength=\count120
+\Field@Width=\dimen122
+\Fld@charsize=\dimen123
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring ON on input line 6398.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count121
+\c@Item=\count122
+\c@Hfootnote=\count123
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hluatex.d
+ef"
+File: hluatex.def 2018/11/30 v6.88e Hyperref driver for luaTeX
+\Fld@listcount=\count124
+\c@bookmark@seq@number=\count125
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfile
+check.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+2.
+)
+\Hy@SectionHShift=\skip48
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/cleveref/cleveref.
+sty"
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `listings' support loaded on input line 3131.
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/mathtools/mathtool
+s.sty"
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count126
+\calc@Bcount=\count127
+\calc@Adimen=\dimen124
+\calc@Bdimen=\dimen125
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count128
+\calc@Cskip=\skip51
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/mathtools/mhsetup.
+sty"
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count129
+\l_MT_multwidth_dim=\dimen126
+\origjot=\skip52
+\l_MT_shortvdotswithinadjustabove_dim=\dimen127
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen128
+\l_MT_above_intertext_sep=\dimen129
+\l_MT_below_intertext_sep=\dimen130
+\l_MT_above_shortintertext_sep=\dimen131
+\l_MT_below_shortintertext_sep=\dimen132
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang1.
+sty"
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang1.
+sty"
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.s
+ty"
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+)
+\c@thm=\count130
+\c@pf=\count131
+ ("./1186 writeup.aux")
+\openout1 = 1186 writeup.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mk
+ii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count132
+\scratchdimen=\dimen133
+\scratchbox=\box37
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen134
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks29
+)
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-
+base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/grfext.st
+y"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
+8.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
+,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 123.
+\c@lstlisting=\count138
+\AtBeginShipoutBox=\box38
+Package hyperref Info: Link coloring ON on input line 123.
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/nameref.s
+ty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitl
+estring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count139
+)
+LaTeX Info: Redefining \ref on input line 123.
+LaTeX Info: Redefining \pageref on input line 123.
+LaTeX Info: Redefining \nameref on input line 123.
+ ("./1186 writeup.out") ("./1186 writeup.out")
+\@outlinefile=\write3
+
+\openout3 = 1186 writeup.out
+\address@aff1=\toks30
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 215.
+LaTeX Font Info:    Try loading font information for U+msa on input line 236.
+
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 236.
+("D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (21.0pt too wide) in paragraph at lines 258--261
+[][][][] 
+ []
+
+
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 294.
+
+Overfull \hbox (1.0pt too wide) has occurred while \output is active
+ [] 
+ []
+
+[1{C:/Users/bryce/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+
+ []
+
+[2] 
+AED: lastpage setting LastPage
+[3] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 379.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 379.
+ ("./1186 writeup.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 379.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 379.
+Package rerunfilecheck Info: File `"1186 writeup".out' has not changed.
+(rerunfilecheck)             Checksum: <no file>.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 379.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 11032 strings out of 494300
+ 100000,460012 words of node,token memory allocated
+ 495 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 53 glue_spec,
+ 9 attribute_list, 2 write nodes
+   avail lists: 2:2106,3:133,4:1360,5:1443,6:42,7:3610,8:66,9:4169,10:27,11:291
+ 14869 multiletter control sequences out of 65536+200000
+ 62 fonts using 4801391 bytes
+ 33i,10n,61p,623b,743s stack positions out of 5000i,500n,10000p,200000b,50000s
+<d:/users/bryce/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmmon
+o10-italic.otf><d:/users/bryce/appdata/local/programs/miktex 2.9/fonts/opentype/
+public/lm/lmroman10-bold.otf><d:/users/bryce/appdata/local/programs/miktex 2.9/f
+onts/opentype/public/lm/lmroman10-regular.otf><d:/users/bryce/appdata/local/prog
+rams/miktex 2.9/fonts/opentype/public/lm/lmmono10-regular.otf><d:/users/bryce/ap
+pdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmmonolt10-bold.otf><d:
+/users/bryce/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmsans10
+-regular.otf><d:/users/bryce/appdata/local/programs/miktex 2.9/fonts/opentype/pu
+blic/lm/lmsans12-regular.otf><d:/users/bryce/appdata/local/programs/miktex 2.9/f
+onts/opentype/public/lm/lmsans17-regular.otf><d:/users/bryce/appdata/local/progr
+ams/miktex 2.9/fonts/opentype/public/lm/lmsans10-bold.otf><d:/users/bryce/appdat
+a/local/programs/miktex 2.9/fonts/opentype/public/lm/lmsans8-regular.otf><D:/Use
+rs/bryce/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10
+.pfb><D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cmextra/cmex9.pfb><D:/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><D:/Users/bryce/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><D:/Users/bryce/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Users/bryce/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Users/bryce
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:
+/Users/bryce/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy9.pfb>
+Output written on 1186 writeup.pdf (4 pages, 143820 bytes).
+
+PDF statistics: 208 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 131072)
+ 49 words of extra memory for PDF output out of 10000 (max. 100000000)
+
